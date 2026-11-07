@@ -33,3 +33,26 @@ export async function obtenerCausas(
     }
   );
 }
+
+// ======================================================
+// SEPOMEX - MUNICIPIOS
+// ======================================================
+
+export async function obtenerMunicipios(
+  estadoId: number,
+  cp: string
+) {
+  return redecoFetch(
+    `/sepomex/municipios/?estado_id=${estadoId}&cp=${encodeURIComponent(cp)}`
+  );
+}
+
+// ======================================================
+// SEPOMEX - COLONIAS
+// ======================================================
+
+export async function obtenerColonias(cp: string) {
+  return redecoFetch(
+    `/sepomex/colonias/?cp=${encodeURIComponent(cp)}`
+  );
+}

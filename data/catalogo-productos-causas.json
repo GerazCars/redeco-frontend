@@ -1,0 +1,1154 @@
+[
+  {
+    "clave": "028212721377",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito con garantía hipotecaria",
+    "subproducto": "Crédito Simple (CGH)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212731379",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito con garantía prendaria",
+    "subproducto": "Crédito Cuenta Corriente (CGP)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212731378",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito con garantía prendaria",
+    "subproducto": "Crédito Simple (CGP)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212741381",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito empresarial",
+    "subproducto": "Crédito Cuenta Corriente (CE)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212741380",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito empresarial",
+    "subproducto": "Crédito Simple (CE)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212751383",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito PYME",
+    "subproducto": "Crédito Cuenta Corriente (CPYME)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212751382",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito PYME",
+    "subproducto": "Crédito Simple (CPYME)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212761384",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Crédito quirografario",
+    "subproducto": "Crédito Simple (CQ)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212771385",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Créditos y préstamos de habilitación y avío",
+    "subproducto": "Crédito Simple (CPHA)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212781386",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Créditos y préstamos refaccionarios",
+    "subproducto": "Crédito Simple (CPR)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212801389",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Microcréditos",
+    "subproducto": "Crédito Cuenta Corriente (MC)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  },
+  {
+    "clave": "028212801388",
+    "tipoOperacion": "Operaciones Activas",
+    "producto": "Microcréditos",
+    "subproducto": "Crédito Simple (MC)",
+    "causas": [
+      {
+        "clave": "0889",
+        "descripcion": "Amenazar, ofender o intimidar al Deudor, familiares, compañeros de trabajo y/o cualquier otra persona que no tenga relación con la deuda"
+      },
+      {
+        "clave": "0878",
+        "descripcion": "Comunicarse fuera del horario comprendido entre las 8:00 a las 21:00 horas, de acuerdo a los husos horarios del domicilio del Deudor"
+      },
+      {
+        "clave": "0888",
+        "descripcion": "Dirigirse de manera no educada e irrespetuosa"
+      },
+      {
+        "clave": "0884",
+        "descripcion": "Enviar o presentar documentos que aparenten ser escritos judiciales u ostentarse como representantes de algún órgano jurisdiccional o autoridad"
+      },
+      {
+        "clave": "0885",
+        "descripcion": "Evidenciar al Deudor públicamente, a través de redes sociales, medios de difusión masiva, listas negras, cartelones o anuncios, entre otros; así como establecer registros especiales, con lo cual se haga del conocimiento del público la negativa de pago del"
+      },
+      {
+        "clave": "0877",
+        "descripcion": "Indicar una forma distinta de pago a la señalada por la Entidad Financiera, y/o solicitar que el pago del adeudo se realice de manera directa al Despacho de Cobranza"
+      },
+      {
+        "clave": "0880",
+        "descripcion": "Omitir entregar al Deudor los documentos que contengan el acuerdo de pago, negociación o reestructuración del crédito, préstamo o financiamiento, que permita identificar los montos, pagos, intereses, requisitos, términos y condiciones del acuerdo"
+      },
+      {
+        "clave": "0872",
+        "descripcion": "Omitir indicar el nombre de las personas responsables de la Cobranza"
+      },
+      {
+        "clave": "0871",
+        "descripcion": "Omitir indicar el nombre, denominación o razón social, domicilio y/o número telefónico del Despacho de Cobranza"
+      },
+      {
+        "clave": "0874",
+        "descripcion": "Omitir mencionar el crédito, préstamo, financiamiento, tipo de producto, operación y/o contrato motivo de la deuda en que se basa la acción de Cobranza"
+      },
+      {
+        "clave": "0876",
+        "descripcion": "Omitir mencionar el domicilio, Correo Electrónico y/o número telefónico de la unidad administrativa de la Entidad Financiera encargada de recibir las Quejas por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0875",
+        "descripcion": "Omitir mencionar el monto del adeudo, fecha de cálculo y/o términos y condiciones para liquidar el adeudo"
+      },
+      {
+        "clave": "0873",
+        "descripcion": "Omitir mencionar el nombre de la Entidad Financiera que otorgó el crédito, préstamo o financiamiento"
+      },
+      {
+        "clave": "1353",
+        "descripcion": "Omitir mencionar que puede presentar una Queja a través del REDECO por malas prácticas de Cobranza"
+      },
+      {
+        "clave": "0563",
+        "descripcion": "Realizar Cobranza de un Crédito ya pagado"
+      },
+      {
+        "clave": "1146",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración a personas que no son el Usuario, cliente y/o socio Deudor"
+      },
+      {
+        "clave": "1351",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración con menores de edad o adultos mayores, salvo que en el último supuesto se trate de los Deudores"
+      },
+      {
+        "clave": "0887",
+        "descripcion": "Realizar gestiones de cobro, negociación o reestructuración en el domicilio, teléfono y/o Correo Electrónico distinto al proporcionado por el Deudor, obligado solidario o aval"
+      },
+      {
+        "clave": "1354",
+        "descripcion": "Realizar gestiones de cobro utilizando teléfonos no registrados por la Entidad Financiera en el REDECO"
+      },
+      {
+        "clave": "1352",
+        "descripcion": "Realizar la Cobranza mediante el uso de grabaciones de forma no personalizada"
+      },
+      {
+        "clave": "0882",
+        "descripcion": "Utilizar números de teléfono que aparezcan en el identificador de llamadas como \"confidencial\", \"oculto\", \"privado\" o con cualquier otra expresión o denominación semejante que imposibilite su identificación"
+      },
+      {
+        "clave": "0881",
+        "descripcion": "Utilizar un nombre o denominación que se asemeja a una institución pública"
+      }
+    ]
+  }
+]

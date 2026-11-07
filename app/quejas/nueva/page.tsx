@@ -1,11 +1,14 @@
 "use client";
 
 import {
+  useCallback,
   useEffect,
   useState,
   type ChangeEvent,
   type FormEvent,
 } from "react";
+
+import catalogoProductosCausas from "@/data/catalogo-productos-causas.json";
 
 // ======================================================
 // INTERFACES
@@ -54,6 +57,39 @@ interface RespuestaColonias {
   colonias: Colonia[];
 }
 
+// Consulta una ruta interna y conserva el detalle del error recibido.
+async function consultarJson<T>(url: string): Promise<T> {
+  const response = await fetch(url, { cache: "no-store" });
+  const texto = await response.text();
+
+  let data: unknown = null;
+
+  if (texto) {
+    try {
+      data = JSON.parse(texto);
+    } catch {
+      throw new Error(
+        `La ruta ${url} devolvió una respuesta que no es JSON (HTTP ${response.status}).`
+      );
+    }
+  }
+
+  if (!response.ok) {
+    const detalle = data as {
+      error?: string;
+      detalle?: string;
+    } | null;
+
+    throw new Error(
+      detalle?.detalle ||
+        detalle?.error ||
+        `Error HTTP ${response.status} al consultar ${url}.`
+    );
+  }
+
+  return data as T;
+}
+
 // ======================================================
 // COMPONENTE
 // ======================================================
@@ -76,6 +112,10 @@ export default function NuevaQuejaPage() {
   const [cargandoMedios, setCargandoMedios] = useState(true);
   const [cargandoNiveles, setCargandoNiveles] = useState(true);
   const [cargandoEstados, setCargandoEstados] = useState(true);
+
+  const [errorMedios, setErrorMedios] = useState("");
+  const [errorNiveles, setErrorNiveles] = useState("");
+  const [errorEstados, setErrorEstados] = useState("");
 
   const [buscandoCP, setBuscandoCP] = useState(false);
   const [cargandoMunicipios, setCargandoMunicipios] = useState(false);
@@ -105,6 +145,13 @@ export default function NuevaQuejaPage() {
     pori: "",
   });
 
+  // Producto seleccionado y sus causas disponibles
+  const productoSeleccionado = catalogoProductosCausas.find(
+    (item) => item.clave === formulario.producto
+  );
+
+  const causasDisponibles = productoSeleccionado?.causas ?? [];
+
   // ====================================================
   // MANEJAR CAMBIOS
   // ====================================================
@@ -114,19 +161,13 @@ export default function NuevaQuejaPage() {
   ) {
     const { name, value } = e.target;
 
-    // Si cambia el estado, limpiamos ubicación
-    if (name === "estado") {
+    // Si cambia el producto, limpiamos la causa anterior
+    if (name === "producto") {
       setFormulario((anterior) => ({
         ...anterior,
-        estado: value,
-        cp: "",
-        municipio: "",
-        colonia: "",
+        producto: value,
+        causa: "",
       }));
-
-      setMunicipios([]);
-      setColonias([]);
-      setMensajeUbicacion("");
 
       return;
     }
@@ -138,106 +179,92 @@ export default function NuevaQuejaPage() {
   }
 
   // ====================================================
-  // CARGAR MEDIOS
+  // CARGAR CATÁLOGOS PRINCIPALES
   // ====================================================
 
-  useEffect(() => {
-    async function cargarMedios() {
-      try {
-        const response = await fetch(
-          "/api/catalogos/medios-recepcion"
-        );
+  const cargarMedios = useCallback(async () => {
+    setCargandoMedios(true);
+    setErrorMedios("");
 
-        if (!response.ok) {
-          throw new Error(
-            "No fue posible obtener los medios"
-          );
-        }
+    try {
+      const data = await consultarJson<RespuestaMedios>(
+        "/api/catalogos/medios-recepcion"
+      );
 
-        const data: RespuestaMedios =
-          await response.json();
-
-        setMedios(data.medio);
-      } catch (error) {
-        console.error(
-          "Error cargando medios:",
-          error
-        );
-      } finally {
-        setCargandoMedios(false);
+      if (!Array.isArray(data.medio)) {
+        throw new Error("La respuesta de medios no contiene el arreglo esperado.");
       }
-    }
 
-    cargarMedios();
+      setMedios(data.medio);
+    } catch (error) {
+      setMedios([]);
+      setErrorMedios(
+        error instanceof Error
+          ? error.message
+          : "No fue posible cargar los medios de recepción."
+      );
+    } finally {
+      setCargandoMedios(false);
+    }
   }, []);
 
-  // ====================================================
-  // CARGAR NIVELES DE ATENCIÓN
-  // ====================================================
+  const cargarNiveles = useCallback(async () => {
+    setCargandoNiveles(true);
+    setErrorNiveles("");
 
-  useEffect(() => {
-    async function cargarNiveles() {
-      try {
-        const response = await fetch(
-          "/api/catalogos/niveles-atencion"
-        );
+    try {
+      const data = await consultarJson<RespuestaNiveles>(
+        "/api/catalogos/niveles-atencion"
+      );
 
-        if (!response.ok) {
-          throw new Error(
-            "No fue posible obtener los niveles"
-          );
-        }
-
-        const data: RespuestaNiveles =
-          await response.json();
-
-        setNiveles(data.nivelesDeAtencion);
-      } catch (error) {
-        console.error(
-          "Error cargando niveles:",
-          error
-        );
-      } finally {
-        setCargandoNiveles(false);
+      if (!Array.isArray(data.nivelesDeAtencion)) {
+        throw new Error("La respuesta de niveles no contiene el arreglo esperado.");
       }
-    }
 
-    cargarNiveles();
+      setNiveles(data.nivelesDeAtencion);
+    } catch (error) {
+      setNiveles([]);
+      setErrorNiveles(
+        error instanceof Error
+          ? error.message
+          : "No fue posible cargar los niveles de atención."
+      );
+    } finally {
+      setCargandoNiveles(false);
+    }
   }, []);
 
-  // ====================================================
-  // CARGAR ESTADOS
-  // ====================================================
+  const cargarEstados = useCallback(async () => {
+    setCargandoEstados(true);
+    setErrorEstados("");
+
+    try {
+      const data = await consultarJson<RespuestaEstados>(
+        "/api/catalogos/estados"
+      );
+
+      if (!Array.isArray(data.estados)) {
+        throw new Error("La respuesta de estados no contiene el arreglo esperado.");
+      }
+
+      setEstados(data.estados);
+    } catch (error) {
+      setEstados([]);
+      setErrorEstados(
+        error instanceof Error
+          ? error.message
+          : "No fue posible cargar los estados."
+      );
+    } finally {
+      setCargandoEstados(false);
+    }
+  }, []);
 
   useEffect(() => {
-    async function cargarEstados() {
-      try {
-        const response = await fetch(
-          "/api/catalogos/estados"
-        );
-
-        if (!response.ok) {
-          throw new Error(
-            "No fue posible obtener los estados"
-          );
-        }
-
-        const data: RespuestaEstados =
-          await response.json();
-
-        setEstados(data.estados);
-      } catch (error) {
-        console.error(
-          "Error cargando estados:",
-          error
-        );
-      } finally {
-        setCargandoEstados(false);
-      }
-    }
-
-    cargarEstados();
-  }, []);
+    void cargarMedios();
+    void cargarNiveles();
+    void cargarEstados();
+  }, [cargarMedios, cargarNiveles, cargarEstados]);
 
   // ====================================================
   // BUSCAR CÓDIGO POSTAL
@@ -247,33 +274,20 @@ export default function NuevaQuejaPage() {
     const cp = formulario.cp.trim();
     const estadoId = formulario.estado;
 
-    // -----------------------------------------------
-    // VALIDAR ESTADO
-    // -----------------------------------------------
-
     if (!estadoId) {
-      setMensajeUbicacion(
-        "Primero selecciona un estado."
-      );
-
+      setMensajeUbicacion("Primero selecciona un estado.");
       return;
     }
-
-    // -----------------------------------------------
-    // VALIDAR CP
-    // -----------------------------------------------
 
     if (!/^\d{5}$/.test(cp)) {
       setMensajeUbicacion(
         "Ingresa un código postal válido de 5 dígitos."
       );
-
       return;
     }
 
     setBuscandoCP(true);
     setMensajeUbicacion("");
-
     setMunicipios([]);
     setColonias([]);
 
@@ -283,86 +297,82 @@ export default function NuevaQuejaPage() {
       colonia: "",
     }));
 
-    try {
-      // =============================================
-      // 1. CONSULTAR MUNICIPIOS
-      // =============================================
+    setCargandoMunicipios(true);
+    setCargandoColonias(true);
 
-      setCargandoMunicipios(true);
+    // Las consultas son independientes: si una falla,
+    // todavía intentamos obtener la información de la otra.
+    const [resultadoMunicipios, resultadoColonias] =
+      await Promise.allSettled([
+        consultarJson<RespuestaMunicipios>(
+          `/api/catalogos/municipios?estado_id=${encodeURIComponent(estadoId)}&cp=${encodeURIComponent(cp)}`
+        ),
+        consultarJson<RespuestaColonias>(
+          `/api/catalogos/colonias?cp=${encodeURIComponent(cp)}`
+        ),
+      ]);
 
-      const responseMunicipios = await fetch(
-        `/api/catalogos/municipios?estado_id=${estadoId}&cp=${cp}`
-      );
+    let huboError = false;
+    let municipiosEncontrados: Municipio[] = [];
+    let coloniasEncontradas: Colonia[] = [];
 
-      if (!responseMunicipios.ok) {
-        throw new Error(
-          "No fue posible consultar municipios"
-        );
+    if (resultadoMunicipios.status === "fulfilled") {
+      const lista = resultadoMunicipios.value.municipios;
+
+      if (Array.isArray(lista)) {
+        municipiosEncontrados = lista;
+        setMunicipios(lista);
+      } else {
+        huboError = true;
       }
-
-      const dataMunicipios: RespuestaMunicipios =
-        await responseMunicipios.json();
-
-      setMunicipios(
-        dataMunicipios.municipios
-      );
-
-      // =============================================
-      // 2. CONSULTAR COLONIAS
-      // =============================================
-
-      setCargandoColonias(true);
-
-      const responseColonias = await fetch(
-        `/api/catalogos/colonias?cp=${cp}`
-      );
-
-      if (!responseColonias.ok) {
-        throw new Error(
-          "No fue posible consultar colonias"
-        );
-      }
-
-      const dataColonias: RespuestaColonias =
-        await responseColonias.json();
-
-      setColonias(
-        dataColonias.colonias
-      );
-
-      // =============================================
-      // 3. VALIDAR RESULTADOS
-      // =============================================
-
-      if (
-        dataMunicipios.municipios.length === 0 &&
-        dataColonias.colonias.length === 0
-      ) {
-        setMensajeUbicacion(
-          "No se encontró información para ese código postal."
-        );
-
-        return;
-      }
-
-      setMensajeUbicacion(
-        "Código postal localizado correctamente."
-      );
-
-    } catch (error) {
-      console.error(
-        "Error consultando SEPOMEX:",
-        error
-      );
-
-      setMensajeUbicacion(
-        "No fue posible obtener la información de ubicación."
-      );
-    } finally {
-      setBuscandoCP(false);
-      setCargandoMunicipios(false);
-      setCargandoColonias(false);
+    } else {
+      huboError = true;
+      setMunicipios([]);
     }
+
+    if (resultadoColonias.status === "fulfilled") {
+      const lista = resultadoColonias.value.colonias;
+
+      if (Array.isArray(lista)) {
+        coloniasEncontradas = lista;
+        setColonias(lista);
+      } else {
+        huboError = true;
+      }
+    } else {
+      huboError = true;
+      setColonias([]);
+    }
+
+    if (huboError) {
+      const detalles = [
+        resultadoMunicipios.status === "rejected"
+          ? `Municipios: ${resultadoMunicipios.reason instanceof Error ? resultadoMunicipios.reason.message : "error desconocido"}`
+          : null,
+        resultadoColonias.status === "rejected"
+          ? `Colonias: ${resultadoColonias.reason instanceof Error ? resultadoColonias.reason.message : "error desconocido"}`
+          : null,
+      ].filter(Boolean);
+
+      setMensajeUbicacion(
+        `SEPOMEX no está disponible para completar la búsqueda. ${detalles.join(" | ")}`
+      );
+    } else if (
+      municipiosEncontrados.length === 0 &&
+      coloniasEncontradas.length === 0
+    ) {
+      setMensajeUbicacion(
+        "No se encontró información para ese código postal."
+      );
+    } else {
+      setMensajeUbicacion(
+        "Código postal consultado correctamente en SEPOMEX."
+      );
+    }
+
+    setBuscandoCP(false);
+    setCargandoMunicipios(false);
+    setCargandoColonias(false);
   }
 
   // ====================================================
@@ -570,8 +580,10 @@ export default function NuevaQuejaPage() {
                 >
                   <option value="">
                     {cargandoMedios
-                      ? "Cargando medios..."
-                      : "Selecciona un medio"}
+                      ? "Consultando CONDUSEF..."
+                      : errorMedios
+                        ? "Catálogo no disponible"
+                        : "Selecciona un medio"}
                   </option>
 
                   {medios.map((medio) => (
@@ -583,6 +595,21 @@ export default function NuevaQuejaPage() {
                     </option>
                   ))}
                 </select>
+                {errorMedios && (
+                  <div className="mt-2 flex flex-wrap items-center gap-2">
+                    <p className="text-xs text-red-600">
+                      No se pudo cargar el catálogo de medios.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => void cargarMedios()}
+                      disabled={cargandoMedios}
+                      className="text-xs font-semibold text-blue-700 underline disabled:opacity-50"
+                    >
+                      Reintentar
+                    </button>
+                  </div>
+                )}
               </div>
 
               {/* NIVEL */}
@@ -601,8 +628,10 @@ export default function NuevaQuejaPage() {
                 >
                   <option value="">
                     {cargandoNiveles
-                      ? "Cargando niveles..."
-                      : "Selecciona un nivel"}
+                      ? "Consultando CONDUSEF..."
+                      : errorNiveles
+                        ? "Catálogo no disponible"
+                        : "Selecciona un nivel"}
                   </option>
 
                   {niveles.map((nivel) => (
@@ -614,6 +643,21 @@ export default function NuevaQuejaPage() {
                     </option>
                   ))}
                 </select>
+                {errorNiveles && (
+                  <div className="mt-2 flex flex-wrap items-center gap-2">
+                    <p className="text-xs text-red-600">
+                      No se pudo cargar el catálogo de niveles.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => void cargarNiveles()}
+                      disabled={cargandoNiveles}
+                      className="text-xs font-semibold text-blue-700 underline disabled:opacity-50"
+                    >
+                      Reintentar
+                    </button>
+                  </div>
+                )}
               </div>
 
             </div>
@@ -645,17 +689,26 @@ export default function NuevaQuejaPage() {
                   Producto / Servicio
                 </label>
 
-                <input
-                  type="text"
+                <select
                   name="producto"
                   value={formulario.producto}
                   onChange={manejarCambio}
-                  placeholder="Clave del producto"
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
-                />
+                  className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-800 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
+                >
+                  <option value="">Selecciona un producto</option>
+
+                  {catalogoProductosCausas.map((producto) => (
+                    <option
+                      key={producto.clave}
+                      value={producto.clave}
+                    >
+                      {producto.producto} - {producto.subproducto}
+                    </option>
+                  ))}
+                </select>
 
                 <p className="mt-2 text-xs text-slate-500">
-                  Catálogo pendiente de autenticación REDECO.
+                  Selecciona el producto financiero relacionado con la queja.
                 </p>
               </div>
 
@@ -666,17 +719,31 @@ export default function NuevaQuejaPage() {
                   Causa
                 </label>
 
-                <input
-                  type="text"
+                <select
                   name="causa"
                   value={formulario.causa}
                   onChange={manejarCambio}
-                  placeholder="Clave de la causa"
-                  className="w-full rounded-lg border border-slate-300 px-4 py-3 text-slate-800 placeholder-slate-400 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100"
-                />
+                  disabled={!formulario.producto}
+                  className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3 text-slate-800 outline-none focus:border-blue-600 focus:ring-2 focus:ring-blue-100 disabled:cursor-not-allowed disabled:bg-slate-100"
+                >
+                  <option value="">
+                    {formulario.producto
+                      ? "Selecciona una causa"
+                      : "Primero selecciona un producto"}
+                  </option>
+
+                  {causasDisponibles.map((causa) => (
+                    <option
+                      key={causa.clave}
+                      value={causa.clave}
+                    >
+                      {causa.clave} - {causa.descripcion}
+                    </option>
+                  ))}
+                </select>
 
                 <p className="mt-2 text-xs text-slate-500">
-                  Catálogo pendiente de autenticación REDECO.
+                  Las causas disponibles dependen del producto seleccionado.
                 </p>
               </div>
 
@@ -791,8 +858,10 @@ export default function NuevaQuejaPage() {
                 >
                   <option value="">
                     {cargandoEstados
-                      ? "Cargando estados..."
-                      : "Selecciona un estado"}
+                      ? "Consultando SEPOMEX..."
+                      : errorEstados
+                        ? "Catálogo no disponible"
+                        : "Selecciona un estado"}
                   </option>
 
                   {estados.map((estado) => (
@@ -804,6 +873,21 @@ export default function NuevaQuejaPage() {
                     </option>
                   ))}
                 </select>
+                {errorEstados && (
+                  <div className="mt-2 flex flex-wrap items-center gap-2">
+                    <p className="text-xs text-red-600">
+                      No se pudo cargar el catálogo de estados.
+                    </p>
+                    <button
+                      type="button"
+                      onClick={() => void cargarEstados()}
+                      disabled={cargandoEstados}
+                      className="text-xs font-semibold text-blue-700 underline disabled:opacity-50"
+                    >
+                      Reintentar
+                    </button>
+                  </div>
+                )}
               </div>
 
               {/* CÓDIGO POSTAL */}
@@ -874,13 +958,18 @@ export default function NuevaQuejaPage() {
                   {municipios.map(
                     (municipio, index) => (
                       <option
-                        key={index}
+                        key={String(municipio.municipioId ?? municipio.id ?? index)}
                         value={String(
                           municipio.municipioId ??
                             municipio.id ??
                             municipio.municipio ??
-                            index
+                            ""
                         )}
+                        disabled={
+                          municipio.municipioId == null &&
+                          municipio.id == null &&
+                          municipio.municipio == null
+                        }
                       >
                         {obtenerNombreMunicipio(
                           municipio
@@ -919,13 +1008,18 @@ export default function NuevaQuejaPage() {
                   {colonias.map(
                     (colonia, index) => (
                       <option
-                        key={index}
+                        key={String(colonia.coloniaId ?? colonia.id ?? index)}
                         value={String(
                           colonia.coloniaId ??
                             colonia.id ??
                             colonia.colonia ??
-                            index
+                            ""
                         )}
+                        disabled={
+                          colonia.coloniaId == null &&
+                          colonia.id == null &&
+                          colonia.colonia == null
+                        }
                       >
                         {obtenerNombreColonia(
                           colonia

@@ -1,4 +1,5 @@
 import { obtenerEstados } from "@/lib/api/catalogos";
+import { ApiError } from "@/lib/api/client";
 
 export async function GET() {
   try {
@@ -11,12 +12,27 @@ export async function GET() {
       error
     );
 
+    const status =
+      error instanceof ApiError
+        ? error.status ?? 502
+        : 500;
+
+    const mensaje =
+      error instanceof Error
+        ? error.message
+        : "Error desconocido al consultar SEPOMEX";
+
     return Response.json(
       {
         error: "No fue posible consultar los estados",
+        detalle: mensaje,
+        servicio: "SEPOMEX",
+        codigoHTTP: error instanceof ApiError
+          ? error.status
+          : null,
       },
       {
-        status: 500,
+        status,
       }
     );
   }
